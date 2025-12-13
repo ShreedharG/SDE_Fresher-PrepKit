@@ -12,6 +12,7 @@ A binary search tree is just a variation of a [[Binary tree]] having following t
 - [[Two Sum]] 
 - [[Find Inorder Successor, Predecessor]]
 - [[Greatest Tree]]
+- [[Absolute Difference]]
 
 
 
