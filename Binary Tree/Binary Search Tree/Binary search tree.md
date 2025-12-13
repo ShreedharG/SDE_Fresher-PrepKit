@@ -14,5 +14,3 @@ A binary search tree is just a variation of a [[Binary tree]] having following t
 - [[Greatest Tree]]
 - [[Absolute Difference]]
 
-
-
