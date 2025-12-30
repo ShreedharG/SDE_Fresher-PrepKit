@@ -6,11 +6,33 @@
 #include <cctype>
 using namespace std;
 
+struct Location {
+    int x;
+    int y;
+
+    bool operator==(const Location& other) const {
+        return x == other.x && y == other.y;
+    }
+};
+
+enum class Gender {
+    MALE,
+    FEMALE,
+    OTHER
+};
+
 enum class VehicleType {
     BIKE,
     AUTO,
     SEDAN,
     SUV
+};
+
+enum class RideCycle {
+    ONGOING,
+    CANCELLED,
+    COMPLETED,
+    WAITING
 };
 
 class Vehicle {
@@ -34,13 +56,6 @@ public:
     string getNumberPlate() const { return numberPlate; }
     string getModel() const { return model; }
     VehicleType getType() const { return type; }
-};
-
-
-enum class Gender {
-    MALE,
-    FEMALE,
-    OTHER
 };
 
 class User {
@@ -134,21 +149,54 @@ public:
     }
 };
 
-struct Location {
-    int x;
-    int y;
+class baseFareCalculator {
+public:
+    virtual ~baseFareCalculator() = default;
+    virtual double calculate(double distance) const = 0;
+};
 
-    bool operator==(const Location& other) const {
-        return x == other.x && y == other.y;
+class baseBike : public baseFareCalculator {
+public:
+    double calculate(double distance) const override {
+        return 10 + distance*10;
     }
 };
 
-enum class RideCycle {
-    ONGOING,
-    CANCELLED,
-    COMPLETED,
-    WAITING
+class baseAuto : public baseFareCalculator {
+public:
+    double calculate(double distance) const override {
+        return 20 + distance*15;
+    }
 };
+
+class baseSedan : public baseFareCalculator {
+public:
+    double calculate(double distance) const override {
+        return 50 + distance*30;
+    }
+};
+
+class baseSUV : public baseFareCalculator {
+public:
+    double calculate(double distance) const override {
+        return 100 + distance*50;
+    }
+};
+
+baseFareCalculator* getBaseFare(VehicleType type){
+    static baseBike bike;
+    static baseAuto autoCalc;
+    static baseSedan sedan;
+    static baseSUV suv;
+
+    switch(type){
+        case VehicleType::BIKE : return &bike;
+        case VehicleType::AUTO : return &autoCalc;
+        case VehicleType::SEDAN : return &sedan;
+        case VehicleType::SUV : return &suv;
+        default : throw invalid_argument("No matching vehicle type");
+    }
+}
 
 class Ride {
 private:
@@ -162,6 +210,17 @@ private:
 
     Location startLoc;
     Location endLoc;
+
+    void calculateFare(){
+        if(status != RideCycle::COMPLETED)
+            throw logic_error("Ride must first be completed");
+        
+        if(!driver || !driver->getVehicle())
+            throw logic_error("Driver information insufficiet");
+        
+        baseFareCalculator* calculator = getBaseFare(driver->getVehicle()->getType());
+        payment = calculator->calculate(rideDistance);
+    }
 
 public:
     Ride(const string& id,Rider* r, const Location& startingLocation, const Location& endingLocation) :
@@ -206,6 +265,13 @@ public:
             driver->updateAvailability(true);
         }
     }
+
+    void setDistance(double distance){
+        if(distance <= 0)
+            throw invalid_argument("Invalid distance");
+
+        rideDistance = distance;
+    }
     
     void completeRide(){
         if(status != RideCycle::ONGOING)
@@ -213,5 +279,7 @@ public:
         
         status = RideCycle::COMPLETED;
         driver->updateAvailability(true);
+
+        calculateFare();
     }
 };
