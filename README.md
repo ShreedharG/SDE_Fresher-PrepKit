@@ -1,8 +1,10 @@
-# 🧠 DSA Notes
+# 🧠 Kit
 
-This repository contains my complete Data Structures & Algorithms learning journey including **300+ solved problems**, handwritten notes, patterns, and summaries.
+This repository contains my complete Data Structures & Algorithms learning journey including **320+ solved problems**, handwritten notes, patterns, and summaries.  
+It has now been updated to include mostly asked questions of `SQL` and `JavaScript ( specifically for MERN tech stack roles )`.
 
-The purpose of this repo is to build a strong foundation for **coding interviews, competitive programming, and placement preparation.**
+> 🎯 **Purpose:** Build a strong foundation for **coding interviews, competitive programming, and placement preparation**.
+
 
 ---
 
@@ -26,6 +28,7 @@ All topics are organized folder-wise for easy navigation and revision:
 | 🧱 Heaps | Priority queues, top-k problems, scheduling logic |
 | 🧵 Strings | Pattern matching, hashing, frequency problems |
 | 💹 SQL | Filtering, Sorting, Joins, Subquery problems | 
+| 👨🏻‍💻 JS | Closures, Array/Function transformations, Promises, Classes |
 
 ---
 
@@ -35,11 +38,12 @@ All topics are organized folder-wise for easy navigation and revision:
 - ✔️ Topic-wise structured notes for fast revision  
 - ✔️ Focused on clarity, intuition, and optimization
 - ✔️ Added questions link for each problem - no more search!
+- ✔️ Added FAQs of SQL and JS(MERN roles) for further assistance.
 ---
 
 ## 🧰 Tech & Tools
 
-- **Language:** C++, MySQL  
+- **Language:** C++, MySQL, JS
 - **Note System:** Obsidian  
 - **Version Control:** Git & GitHub  
 
