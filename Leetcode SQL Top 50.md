@@ -183,7 +183,10 @@ AS num;
 
 ###### Customers Who Bought All Products
 ```
-
+SELECT customer_id
+FROM Purchases
+GROUP BY customer_id
+HAVING COUNT(DISTINCT product_key) = (SELECT COUNT(*) FROM Product);
 ```
 
 ###### User Activity for Past 30 Days

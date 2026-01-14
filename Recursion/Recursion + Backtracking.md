@@ -7,6 +7,7 @@
 - [[Subsets I]]
 - [[Subsets II]]
 - [[Subset Sums]]
+- [[Limited Length Combinations]]
 - [[Combination Sum Target Presence]]
 - [[Combination Sum I]]
 - [[Combination Sum II]]
