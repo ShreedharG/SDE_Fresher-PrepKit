@@ -12,23 +12,24 @@ It has now been updated to include mostly asked questions of `SQL` and `JavaScri
 
 All topics are organized folder-wise for easy navigation and revision:
 
-| Category | Description |
-|----------|-------------|
-| 🧮 Arrays | Classic problems, patterns, prefix-sum, hashing, 2-pointer technique |
-| 🔍 Binary Search | Search templates, boundaries, rotated arrays, optimization tricks |
-| 🌲 Binary Tree | Traversals, tree views, recursion patterns, diameter, LCA |
-| 🧬 Linked List | Fast/slow pointers, reversal patterns, cycle detection, merge operations |
-| 🧠 Dynamic Programming | DP on LIS, subsequences, strings, grids, knapsack, stock problems |
-| 🧱 Graphs | BFS/DFS, shortest paths, cycle detection, Union-Find, MST algorithms |
-| ⚙️ Greedy Algorithms | Optimization-based decisions, interval scheduling, activity selection |
-| 🧩 Recursion | Backtracking templates, permutations, combinations |
-| 🏗️ Sliding Window | Fixed & dynamic window patterns, frequency maps, substring problems |
-| 📚 Stack & Queue | Monotonic structures, postfix evaluation, BFS-based queue usage |
-| 🧮 Sorting Algorithms | Basic to optimized sorting approaches and theory |
-| 🧱 Heaps | Priority queues, top-k problems, scheduling logic |
-| 🧵 Strings | Pattern matching, hashing, frequency problems |
-| 💹 SQL | Filtering, Sorting, Joins, Subquery problems | 
-| 👨🏻‍💻 JS | Closures, Array/Function transformations, Promises, Classes |
+| Category               | Description                                                              |     |
+| ---------------------- | ------------------------------------------------------------------------ | --- |
+| 🧮 Arrays              | Classic problems, patterns, prefix-sum, hashing, 2-pointer technique     |     |
+| 🔍 Binary Search       | Search templates, boundaries, rotated arrays, optimization tricks        |     |
+| 🌲 Binary Tree         | Traversals, tree views, recursion patterns, diameter, LCA                |     |
+| 🧬 Linked List         | Fast/slow pointers, reversal patterns, cycle detection, merge operations |     |
+| 🧠 Dynamic Programming | DP on LIS, subsequences, strings, grids, knapsack, stock problems        |     |
+| 🧱 Graphs              | BFS/DFS, shortest paths, cycle detection, Union-Find, MST algorithms     |     |
+| ⚙️ Greedy Algorithms   | Optimization-based decisions, interval scheduling, activity selection    |     |
+| 🧩 Recursion           | Backtracking templates, permutations, combinations                       |     |
+| 🏗️ Sliding Window     | Fixed & dynamic window patterns, frequency maps, substring problems      |     |
+| 📚 Stack & Queue       | Monotonic structures, postfix evaluation, BFS-based queue usage          |     |
+| 🧮 Sorting Algorithms  | Basic to optimized sorting approaches and theory                         |     |
+| 🧱 Heaps               | Priority queues, top-k problems, scheduling logic                        |     |
+| 🧵 Strings             | Pattern matching, hashing, frequency problems                            |     |
+| 💹 SQL                 | Filtering, Sorting, Joins, Subquery problems                             |     |
+| 👨🏻‍💻 JS             | Closures, Array/Function transforms, Promises, JSON, Classes             |     |
+| 📊 SQL                 | Basics of DQL and DML, Joins, Subqueries, Aggregations                   |     |
 
 ---
 

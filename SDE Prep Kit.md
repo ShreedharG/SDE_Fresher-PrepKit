@@ -15,6 +15,7 @@
 - Dynamic Programming
 - Sliding Window
 
+# Computer Science Fundamentals
 ###### SQL
 - [[Leetcode SQL Top 50]]
 ###### JS Basic Questions
