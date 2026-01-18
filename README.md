@@ -27,7 +27,6 @@ All topics are organized folder-wise for easy navigation and revision:
 | 🧮 Sorting Algorithms  | Basic to optimized sorting approaches and theory                         |     |
 | 🧱 Heaps               | Priority queues, top-k problems, scheduling logic                        |     |
 | 🧵 Strings             | Pattern matching, hashing, frequency problems                            |     |
-| 💹 SQL                 | Filtering, Sorting, Joins, Subquery problems                             |     |
 | 👨🏻‍💻 JS             | Closures, Array/Function transforms, Promises, JSON, Classes             |     |
 | 📊 SQL                 | Basics of DQL and DML, Joins, Subqueries, Aggregations                   |     |
 
