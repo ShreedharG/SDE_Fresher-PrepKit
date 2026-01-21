@@ -16,7 +16,6 @@ class Solution {
             }
         }
         
-        bool update = false;
         for(auto edge : edges){
             int u = edge[0], v = edge[1], w = edge[2];
             

@@ -19,6 +19,5 @@ class Solution {
 };
 ```
 
-
 Return -> [[Shortest Path Algorithms]]
 
