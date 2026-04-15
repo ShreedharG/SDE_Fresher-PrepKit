@@ -66,7 +66,7 @@ All topics are organized folder-wise for easy navigation and revision:
 ---
 
 <div align="center"> 
-  <img width="350" height="1000" src="https://media4.giphy.com/media/TvTvFbe0bnNVjhq0MB/giphy.gif"/> 
+  <img width="350" height="350" src="https://media4.giphy.com/media/TvTvFbe0bnNVjhq0MB/giphy.gif" style="border-radius: 50%;"/> 
   <p> One day they’ll call it talent — until then, it's work.</p>
 </div>
 
